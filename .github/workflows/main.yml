@@ -17,9 +17,6 @@ jobs:
     # if: ${{ github.event_name == 'pull_request'}}
 
     steps:
-      - name: pinging the server
-        run: curl -I ven05366.service-now.com
-
       - name: ServiceNow CI/CD Apply Changes
         uses: ServiceNow/sncicd-apply-changes@2.0.0
         env:
